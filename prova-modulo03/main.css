@@ -1,0 +1,14 @@
+input {
+    display: block;
+}
+select {
+    display: block;
+}
+
+.botao {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+
+}
+

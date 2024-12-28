@@ -1,0 +1,53 @@
+<!--                                                Prova do módulo 03
+
+    Crie uma página HTML que contenha um formulário de cadastro simples. Utilize as tags apropriadas para 
+    criar campos de entrada de dados, botões e uma áres de texto.
+
+    Instruções:
+     - Campo de Nome: Adicione um campo de entrada de texto (<input type="text") com um rótulo (<label>) para o nome do usuário.
+     - Campo de E-mail: Adicione um campo de entrada de e-mail (<input type="email">) com um rótulo.
+     - Campo de Senha: Adicione um campo de entrada de senha  (<input type="passoword") com um rótulo.
+     - Campo de Seleção (<select>): Adicione uma lista suspensa com várias opções(<option>) para que o usuário selecione o país.
+     - Campo de Mensagem: Adicione uma área de texto (<textarea>) para que o usuário possa inserir uma mensagem ou descrição.
+     - Botões: Adicione um botão para enviar o formulário (<button type="submit">) e outro para limpar os campos (<button type="reset"). -->
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 03</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+        <h1>Cadastro Pessoal</h1>
+        <p>Preencha o formulário a seguir para que possamos entrar em contato.</p>
+        
+        <!-- Formulário -->
+        <form action="/enviar" method="post">
+            <label for="nome">Nome:</label> <!-- Nome -->
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+
+            <label for="e-mail">E-mail:</label> <!-- e-mail -->
+            <input type="text" id="e-mail" name="e-mail" id="e-mail" placeholder="Digite seu e-mail">
+
+            <label for="senha">Senha:</label> <!-- Senha -->
+            <input type="password" id="passoword" name="passoword" placeholder="Digite sua senha">
+
+        <select name="país" id="país"> <!-- País -->
+            <option value="brasil">Brasil</option>
+            <option value="eua">Estados Unidos</option>
+            <option value="uk">Reino Unidos</option>
+            <option value="japão">Japão</option>
+        </select>
+
+        <textarea name="mensagem" id="mensagem" rows="10"></textarea> <!-- Área de texto para mensagens do usuário -->
+
+        <div class="botao">
+            <button type="submit">Enviar</button> <!-- Botão para enviar as informações do formulário -->
+            <button type="reset">Redefinir</button> <!-- Botão para redefinir o que foi escrito no formulário -->
+        </div>
+
+        </form>
+</body>
+</html>
